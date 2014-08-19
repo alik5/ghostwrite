@@ -1,0 +1,33 @@
+
+
+
+a {
+  color: #e6362c;
+}
+
+
+
+button:hover {
+  background: #F42740;
+  color: white;
+  transition: 1s;
+}
+
+.custom:hover {
+  background: black;
+  color: hsl(0,100%,60%);
+  transition: 1s;
+}
+
+$footer-background: #383838;
+  $footer-color: whitesmoke;
+  $footer-link-color: transparentize($footer-color, .6);
+  $footer-disclaimer-color: transparentize($footer-color, .6);
+
+footer {
+  background: $footer-background;
+  }
+
+
+
+

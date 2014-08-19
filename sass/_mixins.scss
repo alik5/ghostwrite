@@ -1,0 +1,16 @@
+@import 'bourbon/bourbon.scss'; 
+@import 'neat/neat'; 
+
+$style: simple; 
+$base-color: #ebebeb; 
+$text-size: inherit;
+$padding: 7px 18px;
+
+@mixin button($base-color, $padding) {
+	background-color: $base-color; 
+	padding: $padding; 
+
+}
+
+
+
