@@ -1,15 +1,59 @@
 @import 'bourbon/bourbon.scss'; 
 @import 'neat/neat'; 
 
-$style: simple; 
-$base-color: #ebebeb; 
-$text-size: inherit;
-$padding: 7px 18px;
 
-@mixin button($base-color, $padding) {
-	background-color: $base-color; 
-	padding: $padding; 
 
+@mixin roundy {
+	border-radius: 10px; 
+	border-top-radius: 8px; 
+	border-bottom-left-radius: 8px; 
+	font-family:'Ubuntu Mono';
+	font-weight: lighter; 
+	font-size: 2em; 
+	width: 200px; 
+	margin-top: 40px; 
+	background-color: transparent;
+	border-color: #00FFFF; 
+	border-stlye: solid;
+
+}
+
+
+@mixin minimal-indent {
+  background-color: $footer-color; 
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 0 0 black, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+  box-shadow: inset 0 1px 0 0 black, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+  color: whitesmoke;
+  font: 2em "'Ubuntu Mono'", sans-serif;
+  margin: 0;
+  padding: 7px 0;
+  text-shadow: 0 1px 1px #fff;
+  width: 150px;
+
+  &:hover {
+    @include linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+      -webkit-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+  box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+    cursor: pointer;
+  }
+
+  &:active {
+      -webkit-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+  box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+  }
+}
+
+div.indent {
+  @include linear-gradient(#e2e2e2, #fafafa);
+  border-bottom: 1px solid #e7e7e7;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-top: 1px solid #dfdfdf;
+  border-radius: 8px;
+  margin: 50px auto 0;
+  padding: 10px 0;
+  width: 170px;
 }
 
 

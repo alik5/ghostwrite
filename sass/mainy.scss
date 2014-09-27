@@ -5,6 +5,7 @@
 @import 'sass/_variables.scss';  
 @import 'sass/_mixins.scss'; 
 @import './sass/_colors.scss';
+@import 'sass/_globals.scss'; 
 
 
 
@@ -14,41 +15,58 @@
   height: auto; 
   margin-left: auto; 
   margin-right: auto; 
-  margin-bottom: 20px; 
+  margin-bottom: 30px; 
   display: block;   
 }
 
-body {
-  background: url('../images.css/notebook.png'); 
+header {
+  background-color: $footer-background; 
+  margin: 20px;
 }
+
+body {
+
+background-color: $footer-background;
+  
+}
+
+#wrapper {
+ background: url('../images.css/linedpaper.png') no-repeat center; 
+ background-size: 99%; 
+ margin: 20px; 
+  
+background-color: $footer-background;
+
+}
+
+
 
 
 
 /******Buttons*******/
-
-#buttons {
-  margin-left: 22.5%; 
+#indent ul {
+  margin: 0px auto;  
+  text-align: center;
 }
 
-#buttons li {
+#indent  li {
   display: inline; 
   list-style: none;   
-  float: left;
+  float: center;
+  margin: 10px;
 
 }
 
+.minimal-indent {
+  
+  @include minimal-indent;
 
-button {
-  border-radius: .7em; 
-  border: 1px dashed;
+}
+
+.button:hover{
   background-color: transparent; 
-  color: white; 
-  font-family: 'Julius Sans One', serif; 
-  margin: 20px; 
-  padding: 30px; 
-  font-size: 1.7em; 
-
 }
+
 
  
 
