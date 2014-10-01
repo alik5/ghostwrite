@@ -11,7 +11,7 @@
 
 
 #main-logo {
-  width: 30%; 
+  width: 25%; 
   height: auto; 
   margin-left: auto; 
   margin-right: auto; 
@@ -19,14 +19,67 @@
   display: block;   
 }
 
+
+
+#splash-logo {
+  width: 45%;
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: auto; 
+  display: block; 
+}
+
 header {
   background-color: $footer-background; 
   margin: 20px;
 }
 
-body {
+#all-body {
 
 background-color: $footer-background;
+  
+}
+
+.text {
+
+ font-family: 'Homemade Apple', cursive;
+  color: whitesmoke;
+  font-size: 2em; 
+  text-align: center; 
+    
+  
+  
+}
+
+#splash_page {
+  background-image: url(../images.css/trees.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+#down-arrow {
+  width: 12%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 30px; 
+  display: block; 
+
+}
+
+.arrow_container {
+  padding: 20px; 
+}
+.instructions {
+
+text-align: center; 
+  
+}
+
+.element {
+
+  font-family: 'Homemade Apple', cursive;
+  color: #0AE8B3;
+  font-size: 1.6em; 
   
 }
 
@@ -34,38 +87,32 @@ background-color: $footer-background;
  background: url('../images.css/linedpaper.png') no-repeat center; 
  background-size: 99%; 
  margin: 20px; 
-  
-background-color: $footer-background;
+ background-color: $footer-background;
 
+}
+
+/**********button**********/
+.button {
+  background: transparent; 
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2em;  
+  border: none;
+  color: white;   
+}
+
+#wrapper ul {
+  text-align: center; 
+  padding: 20px; 
+
+}
+
+#wrapper ul li {
+  padding: 2px; 
 }
 
 
 
 
-
-/******Buttons*******/
-#indent ul {
-  margin: 0px auto;  
-  text-align: center;
-}
-
-#indent  li {
-  display: inline; 
-  list-style: none;   
-  float: center;
-  margin: 10px;
-
-}
-
-.minimal-indent {
-  
-  @include minimal-indent;
-
-}
-
-.button:hover{
-  background-color: transparent; 
-}
 
 
  
@@ -147,325 +194,6 @@ footer {
   }
 }
 
-/*******contact********/
-
-.talk:before {
-  content: "\e600";
-  font-family:"icomoon";
-  font-size: 80px;
-}
-
-.twitter:before {
-  content: "\e602";
-  font-family:"icomoon";
-  font-size: 80px;
-}
-
-.facebook:before {
-  content: "\e601";
-  font-family:"icomoon";
-  font-size: 80px;
-}
-
-.talk:hover {
-  background: hsl(0,100%,60%);
-  color: white;
-  transition: 1s;
-}
-
-.twitter:hover {
-  background: hsl(0,100%,60%);
-  color: white;
-  transition: 1s;
-}
-
-.facebook:hover {
-  background: hsl(0,100%,60%);
-  color: white;
-  transition: 1s;
-}
-
-#contactme li {
-  margin: auto;
-  padding: 15px;
-  list-style-type: none;
-}
-
-#killer li {
-  margin: auto;
-  padding: 15px;
-}
-
-
-/*******webfonts*******/
-
-@font-face {
-  font-family: 'icomoon';
-  src: url('fonts/icomoon.eot');
-}
-@font-face {
-  font-family: 'icomoon';
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'),
-     url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/******nav**********/
-
-.centered-navigation {
-  $centered-navigation-padding: 1em;
-  $centered-navigation-logo-height: 1.5em;
-  $centered-navigation-background: #383838;
-  $centered-navigation-color: black;
-  $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 60px;
-  $centered-navigation-item-padding: 2em;
-  $centered-navigation-submenu-padding: 1em;
-  $centered-navigation-submenu-width: 12em;
-  $centered-navigation-item-nudge: 2.2em;
-  $horizontal-bar-mode: $large-screen;
-
-  background-color: none;
-  
-  font-family: 'Rokkitt', serif; 
-  font-size: 1.5em; 
-  height: $centered-navigation-height;
-  width: 100%;
-  z-index: 9999;
-  
-  
-// Mobile view
-
-  .mobile-logo {
-    display: inline;    
-    float: left;
-    max-height: $centered-navigation-height;
-    padding-left: $centered-navigation-padding;
-
-    img {
-      max-height: $centered-navigation-height;
-      opacity: .6;
-      padding: .8em 0;
-    }
-
-    @include media($horizontal-bar-mode) {
-      display: none;
-    }
-  }
-
-
-
-  .centered-navigation-menu-button {
-    color: black;
-    display: block;
-    float: right;
-    line-height: $centered-navigation-height;
-    margin: 0;
-    padding-right: $centered-navigation-submenu-padding;
-    text-transform: uppercase;
-
-    @include media ($horizontal-bar-mode) {
-      display: none;
-    }
-
-    &:hover {
-      color: $centered-navigation-color-hover;
-    }
-  }
 
   
-// Nav menu
-
-  .centered-navigation-wrapper {
-    @include outer-container;
-    @include clearfix;
-    position: relative;
-    z-index: 999;
-  }
-
-  ul.centered-navigation-menu {    
-    -webkit-transform-style: preserve-3d; 
-// stop webkit flicker
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 100%;
-    z-index: 99999;
-
-    @include media ($horizontal-bar-mode) {
-      display: block;
-      text-align: center;
-    }
-  }
-
   
-// The nav items
-
-  .nav-link:first-child {
-    @include media($horizontal-bar-mode) {
-      margin-left: $centered-navigation-item-nudge;
-    }
-  }
-
-  ul li {
-    background: $centered-navigation-background;
-    display: block;
-    line-height: $centered-navigation-height;
-    overflow: hidden;
-    padding-right: $centered-navigation-submenu-padding;
-    text-align: right;
-    width: 100%;
-    z-index: 9999;
-
-    @include media($horizontal-bar-mode) {
-      background: transparent;
-      display: inline;
-      line-height: $centered-navigation-height;  
-
-      a {
-        padding-right: $centered-navigation-item-padding;
-      }
-    }
-    
-    a {
-      color: $centered-navigation-color;
-      display: inline-block;
-
-
-      &:hover {
-        color: $centered-navigation-color-hover;
-      }
-    }
-  }
-
-  li.logo.resize {
-    //line-height: 2;
-    height: auto; 
-    height: 20px; 
-
-    @include media($large-screen) {
-      display: inline;
-    }
-  }
-
-  .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 3;
-    max-height: $centered-navigation-logo-height;
-    opacity: .8;
-  }
-
-  
-// Sub menus
-
-  li.more.nav-link {
-    > ul > li:first-child a  {
-      padding-top: 1em;
-    }
-
-    a {
-      margin-right: $centered-navigation-submenu-padding;
-    }
-
-    > a {
-      padding-right: 0.6em;
-    }
-
-    > a:after {
-      @include position(absolute, auto -.4em auto auto);
-      color: $centered-navigation-color;
-      content: '\25BE';
-    }
-  }
-
-  li.more {
-    overflow: visible;
-    padding-right: 0;
-
-    a {
-      padding-right: $centered-navigation-submenu-padding;
-    }
-
-    > a {
-      padding-right: 1.6em;
-      position: relative;
-
-      @include media($large-screen) {
-        margin-right: $centered-navigation-submenu-padding;
-      }
-
-      &:after {
-        content: '›';
-        font-size: 1.2em;
-        position: absolute;
-        right: $centered-navigation-submenu-padding / 2;
-      }      
-    }
-
-    &:hover > .submenu {
-      display: block;
-    }
-
-    @include media($horizontal-bar-mode) {
-      padding-right: $centered-navigation-submenu-padding;
-      position: relative;
-    }
-  }
-
-  ul.submenu {
-    display: none;
-    padding-left: 0;
-
-    @include media($horizontal-bar-mode) {
-      left: -$centered-navigation-submenu-padding;
-      position: absolute;
-      top: 1.5em;
-    }
-
-    .submenu {
-      @include media($horizontal-bar-mode) {
-        left: $centered-navigation-submenu-width - .2em;
-        top: 0;
-      }
-    }
-
-    li {
-      display: block;
-      padding-right: 0;
-
-      @include media($horizontal-bar-mode) {
-        line-height: $centered-navigation-height / 1.3;
-
-        &:first-child > a {
-          border-top-left-radius: $base-border-radius;
-          border-top-right-radius: $base-border-radius;
-        }
-
-        &:last-child > a {
-          border-bottom-left-radius: $base-border-radius;
-          border-bottom-right-radius: $base-border-radius;
-          padding-bottom: .7em;
-        }
-      }
-
-      a {
-        background-color: darken($centered-navigation-background, 3);
-        display: inline-block;
-        text-align: right;
-        width: 100%;
-
-        @include media($horizontal-bar-mode) {
-          background-color: $centered-navigation-background;
-          padding-left: $centered-navigation-submenu-padding;
-          text-align: left;
-          width: $centered-navigation-submenu-width;
-        }
-      }
-    }
-  }
-}
-
-    
-
