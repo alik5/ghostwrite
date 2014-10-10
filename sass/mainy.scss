@@ -8,16 +8,23 @@
 @import 'sass/_globals.scss'; 
 
 
+/**********modal**********/
 
+.remodal-bg {
+  background: blur(1px); 
+
+}
 
 #main-logo {
   width: 25%; 
   height: auto; 
   margin-left: auto; 
   margin-right: auto; 
-  margin-bottom: 30px; 
+  margin-bottom: -20px; 
   display: block;   
 }
+
+
 
 
 
@@ -42,10 +49,12 @@ background-color: $footer-background;
 
 .text {
 
- font-family: 'Homemade Apple', cursive;
+  font-family: 'Raleway Dots', cursive;
   color: whitesmoke;
-  font-size: 2em; 
+  font-size: 3em; 
   text-align: center; 
+  margin-top: -60px; 
+  margin-bottom: 50px; 
     
   
   
@@ -97,7 +106,8 @@ text-align: center;
   font-family: 'Homemade Apple', cursive;
   font-size: 2em;  
   border: none;
-  color: white;   
+  color: white;     
+  background-color: none; 
 }
 
 #wrapper ul {

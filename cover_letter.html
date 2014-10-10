@@ -8,12 +8,14 @@
     <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="flexbox/flexbox.css" type="text/css" >
-    </head>
+    <link rel="stylesheet" type="text/css" href="flexbox/flexbox.css">
+    <link rel="stylesheet" href="bower_components/remodal/dist/jquery.remodal.css">
     
+  </head>
   <body id="all-body">
-  <script src="path/to/your/jquery.remodal.min.js"></script>
-    <div>
+    <div id="wrapper">
+
+ 
 
   <a href="index.html">
         <img src="images.css/logo2.png" id="main-logo">
@@ -22,31 +24,49 @@
         <span class ="element"></span>
         </div>
       
-      </div> 
-    <div id="wrapper">
-  <section>
-         <ul>
+        <div class="remodal-bg">
+           <li>
+            <ul>
+            <a href="#modal"><button class="button">Long Form</button>
+            </a></li>
+            <div class="remodal" data-remodal-id="modal">
+                <h1>Remodal</h1>
+                <p>
+                Flat, responsive, lightweight, fast, easy customizable modal window plugin
+                with declarative state notation and hash tracking.
+               </p>
+              <br>
+           <a class="remodal-cancel" href="#">Cancel</a>
+           <a class="remodal-confirm" href="#">OK</a>
+           </div>
             <li>
-            <button class='button'>Network</button>
-            </li>
-          <li>
-            <a href="cover_letter.html"><button class='button'>Cover Letter</button></a>
-          </li>
-          <li>
-            <button class='button'>Thank You Note</button>
-          </li>
-          <li>
-            <button class='button'>Freelancing</button>
-          <li>
-            <button class='button'>Custom</button>
-          
+             <a href="#modal"><button class="button">Short Form</button>
+              </a></li>
+               <div class="remodal" data-remodal-id="modal">
+                <h1>Remodal</h1>
+                <p>
+                Flat, responsive, lightweight, fast, easy customizable modal window plugin
+                with declarative state notation and hash tracking.
+               </p>
+              <br>
+           <a class="remodal-cancel" href="#">Cancel</a>
+           <a class="remodal-confirm" href="#">OK</a>
+           </div>
+              <li>
+             <a href="custom.html"><button class="button">Custom</button>
+              </a></li>
             </ul>
-          </div>
-          </section>
-          </div>
+          
+
+          
+             
         
 
-          </section>
+        
+        </div>
+        </div>
+
+          
            </body>
         
 
@@ -54,6 +74,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/effects.js" type="text/javascript" charset="utf-8"></script>
         <script src="typed.js-master/js/typed.js"></script>
+        <script src="bower_components/remodal/dist/jquery.remodal.min.js"></script>
         
  
   <div class="footer-links">
@@ -86,4 +107,3 @@
  
 
 </html>
-
