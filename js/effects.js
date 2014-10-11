@@ -1,11 +1,15 @@
-
-
-  $(function(){
+$(document).ready(function(){
       $(".element").typed({
         strings: ["Go on then, pick a category.", "It's not hard...", "What are you writing for?"],
         typeSpeed: 100
       });
-  });
+
+      console.log('hi');
+      console.log($('.remodal-body'));
+
+
+      $('.remodal-body').load('../modal.html');
+});
 
 
   $('#splash_page').mouseover(function(){
@@ -15,8 +19,6 @@
     });
   });
 });
-
-
 
 
 $(document).on('open', '.remodal', function () {
