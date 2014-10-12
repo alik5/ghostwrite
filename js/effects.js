@@ -5,10 +5,7 @@ $(document).ready(function(){
       });
 
       console.log('hi');
-      console.log($('.remodal-body'));
-
-
-      $('.remodal-body').load('../modal.html');
+      
 });
 
 

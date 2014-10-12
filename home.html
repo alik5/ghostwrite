@@ -8,9 +8,10 @@
     <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="flexbox/flexbox.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
-    
+    <link rel="stylesheet" href="bower_components/remodal/dist/jquery.remodal.css">
   </head>
   <body id="all-body">
   
@@ -37,17 +38,24 @@
                 </a>
               </li>
               <li>
-               <a href="#"><button class="button">Custom</button>
+               <a href="#modal_custom"><button class="button">Custom</button>
                </a>
               </li>
             </ul>
           
           </div>
+           </div>
         
-          
+              <div class="remodal" data-remodal-id="modal_custom">
+              <div id="remodal_body_custom">
+                </div>
+              <a class="remodal-cancel" href="#">Cancel</a>
+              <a class="remodal-confirm" href="#">OK</a>
+            
+          </div>
         
 
-          </div>
+         
            </body>
         
 
@@ -56,7 +64,7 @@
         <script src="js/effects.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
         <script src="typed.js-master/js/typed.js"></script>
-        
+        <script src="bower_components/remodal/dist/jquery.remodal.min.js"></script>
  
   <div class="footer-links">
     <ul>
